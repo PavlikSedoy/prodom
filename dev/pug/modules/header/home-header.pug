@@ -1,0 +1,20 @@
+//- Header Block
+header.home-header
+  //- Slider main container
+  .swiper-container
+      //- Additional required wrapper
+      .swiper-wrapper
+          //- Slides
+          .swiper-slide(
+              style='background-image: url(./static/images/home-page/header-slider/slide-1.JPG)'
+            )
+              .darken-layer
+              | Slide 1
+          .swiper-slide(
+              style='background-image: url(./static/images/home-page/header-slider/slide-2.jpeg)'
+            ) Slide 2
+          .swiper-slide(
+              style='background-image: url(./static/images/home-page/header-slider/slide-3.jpeg)'
+            ) Slide 3
+      //- If we need pagination
+      .swiper-pagination

@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  max-width: map-get($bootstrap-max-width, xl);
+}
+
+@include media-container('lg');
+@include media-container('md');
+@include media-container('sm');
+@include media-container('xs');
