@@ -1,0 +1,192 @@
+// Navigation Block
+.nav-bar {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 100%;
+  z-index: z("nav-bar");
+  color: $nav-text-color;
+
+  // logo and conrols row
+  &__logo-and-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // logo
+  &__logo {
+    flex-basis: 146px;
+
+    img {
+      max-width: 146px;
+    }
+  }
+
+  // Navigation
+  &__nav {
+    margin-top: .29rem;
+  }
+}
+
+// Controls
+.nav-ctrls {
+  // Fot all nav-ctrls items
+  display: flex;
+  align-items: center;
+  font-size: 1.14rem;
+
+  &__item {
+    span {
+      display: block;
+      font-weight: 500;
+
+      &:last-child {
+        margin-top: .36rem;
+      }
+    }
+
+    a {
+      color: $nav-text-color;
+      transition: .3s ease;
+
+      &:hover {
+        color: $nav-active-color;
+      }
+    }
+  }
+
+  // Contact links
+  &__contacts {
+    padding: 0 2.14rem 0 2.71rem;
+
+    span:first-child {
+      font-weight: 900;
+    }
+  }
+
+  // Language switcher
+  &__lng-swtch {
+    margin-right: 1.64rem;
+    font-size: 1.21rem;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      &:first-child {
+        margin-right: .86rem;
+      }
+
+      &.current-lang a {
+        color: $nav-active-color;
+      }
+    }
+
+    a {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  // Button
+  &__btn-wr {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.35rem;
+    padding-left: 2.14rem;
+
+    a {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    // Line before button
+    &:before {
+      @include pseudo;
+      left: -1px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: $nav-text-color;
+    }
+  }
+}
+
+// Navigation
+.nav {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 15px;
+    position: relative;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    padding: 1rem 0;
+
+    // On hover menu
+    div {
+      position: absolute;
+      left: -1.64rem;
+      top: 100%;
+      padding: 0.64rem 0;
+      background-color: $second-lavel-meny-bg;
+      visibility: hidden;
+      opacity: 0;
+      transition: .3s ease;
+      min-width: 100%;
+
+      ul {
+        display: block;
+      }
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        padding: .64rem 1.64rem;
+        white-space: nowrap;
+        text-transform: none;
+        display: block;
+        width: 100%;
+        font-size: .9rem;
+        font-weight: 500;
+      }
+    }
+
+    &:hover {
+      div {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $nav-text-color;
+    transition: .3s ease;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $nav-active-color;
+    }
+  }
+}

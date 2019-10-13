@@ -1,0 +1,5 @@
+@include font-face('GothamPro', '../fonts/GothamPro/GothamPro', $weight: 400, $style: normal, $asset-pipeline: false );
+@include font-face('GothamPro', '../fonts/GothamPro-Light/GothamPro-Light', $weight: 300, $style: normal, $asset-pipeline: false );
+@include font-face('GothamPro', '../fonts/GothamPro-Medium/GothamPro-Medium', $weight: 500, $style: normal, $asset-pipeline: false );
+@include font-face('GothamPro', '../fonts/GothamPro-Bold/GothamPro-Bold', $weight: 700, $style: normal, $asset-pipeline: false );
+@include font-face('GothamPro', '../fonts/GothamPro-Black/GothamPro-Black', $weight: 900, $style: normal, $asset-pipeline: false );

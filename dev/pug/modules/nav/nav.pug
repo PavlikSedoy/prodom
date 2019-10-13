@@ -1,3 +1,58 @@
 //- Navigation Block
 .nav-bar
-  .container.nav-bar__container nav
+  .container.nav-bar__container
+    //- Logo and Controls
+    .nav-bar__logo-and-controls
+      //- logo
+      .nav-bar__logo
+        a.nav-bar__logo_link(href="/")
+          img(src="./static/images/logo.svg")
+
+      //- controls
+      .nav-bar__controls.nav-ctrls
+        //- Work time
+        .nav-ctrls__item.nav-crtls__work-time
+          span Пн - Пт: 
+          span 8:00 - 17:00
+        //- contacts
+        .nav-ctrls__item.nav-ctrls__contacts
+          span
+            a(href="tel:+375162209228") +375 (162) 20-92-28
+          span
+            a(href="mailto:info@prodomstroy.by") info@prodomstroy.by
+        //- language switcher
+        .nav-ctrls__item.nav-ctrls__lng-swtch
+          ul
+            li.current-lang
+              a(href="/rus") RUS
+            li
+              a(href="/eng") ENG
+        .nav-ctrls__item.nav-ctrls__btn-wr
+          a Заказать <br> звонок
+
+    //- Navigation
+    .nav-bar__nav.nav
+      nav
+        ul
+          li
+            a(href="/") ГЛАВНАЯ
+          li
+            a(href="/services") УСЛУГИ
+            
+            //-  Block on hover
+            div
+              ul
+                li
+                  a(href="/services-type") Строительство зданий
+                li
+                  a(href="/services-type") Долевое строительство
+                li
+                  a(href="/services-type") Проектирование строительства
+          li
+            a(href="/metal-rolling") МЕТАЛЛОПРОКАТ
+          li
+            a(href="/projects") ПРОЕКТЫ
+          li
+            a(href="/about") КОМПАНИЯ
+          li
+            a(href="/contacts") КОНТАКТЫ
