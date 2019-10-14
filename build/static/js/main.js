@@ -10,6 +10,7 @@ $(document).ready(function () {
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
+          type: 'fraction',
         },
     });
 });
