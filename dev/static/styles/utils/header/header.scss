@@ -52,7 +52,7 @@
   // Pagination
   &__pagination-wr {
     position: absolute;
-    width: 100%;
+    width: 100px;
     z-index: z('header-pagination');
     height: 100%;
     padding-top: 130px;
@@ -60,6 +60,7 @@
     transform: translateY(-50%);
     display: flex;
     align-items: center;
+    right: calc((100% - 1140px) / 2);
   }
 
   &__pagination-container {

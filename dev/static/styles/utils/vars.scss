@@ -7,7 +7,7 @@ $nav-text-color: #ffffff;
 $nav-active-color: #FFBE00;
 $second-lavel-meny-bg: #222228;
 // Btn
-$btn-text: #222228;
+$default-text: #222228;
 
 // Sizes
 $base-font-size: 16px;
@@ -37,6 +37,8 @@ $bootstrap-max-width: (
   "sm" : 540px,
   "xs" : 100%
 );
+
+$marginContainer: map-get($bootstrap-max-width, 'xl');
 
 $content-size: 1024px;
 
