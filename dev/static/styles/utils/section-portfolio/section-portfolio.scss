@@ -1,0 +1,75 @@
+.section-portfolio {
+  padding-bottom: 6.07rem;
+
+  // content
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__content {
+    flex-basis: 75%;
+  }
+
+  &__desc {
+    margin-top: 1rem;
+  }
+
+  &__btn-wr {
+    margin-bottom: -1.3rem;
+  }
+
+  // Slider
+  &__slider-wr {
+    margin-top: 2rem;
+  }
+
+  &__slider {
+    overflow: hidden;
+    padding: 1.5rem 0;
+
+    .swiper-slide {
+      width: calc(25% - 10px);
+      flex-basis: auto;
+
+      &.double {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+
+  .services-item {
+    height: 465px;
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    a .services-item__col:first-child {
+      flex-basis: 205px;
+    }
+
+    &.double {
+      .services-item__type {
+        font-size: 1.57rem;
+        font-weight: 400;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 1.57rem;
+        margin-top: 0.59rem;
+      }
+
+      a {
+        justify-content: space-between;
+
+        .services-item__col:first-child {
+          flex-basis: 380px;
+        }
+      }
+    }
+  }
+}

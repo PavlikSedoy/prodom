@@ -57,4 +57,12 @@ $(document).ready(function () {
     lightGallery(document.getElementById('reviewsLightbox'), {
         thumbnail:true
     }); 
+
+    // Portfolio-slider
+    var mySwiperPortfolio = new Swiper('.section-portfolio__slider', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+    });
 });
