@@ -1,0 +1,77 @@
+.section-numbers {
+  background-image: url(../images/home-page/numbers/bg.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 4.14rem;
+  padding-bottom: 5.07rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  &__desc {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  // Numbers items
+  &__row {
+    display: flex;
+  }
+
+  &__items {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  &__item {
+    flex-basis: 50%;
+    margin-top: 2.57rem;
+  }
+
+  &__check-and-count {
+    display: flex;
+    align-items: center;
+  }
+
+  // Checkbox
+  &__check {
+    position: relative;
+    background-color: $yellow;
+    width: 33px;
+    height: 33px;
+
+    &:after {
+      @include pseudo;
+      top: -5px;
+      right: -5px;
+      width: 36px;
+      height: 29px;
+      background: 50% 50%/contain no-repeat url('../images/home-page/numbers/check.svg');
+    }
+  }
+
+  // Number
+  &__count {
+    margin-left: 1.64rem;
+
+    span {
+      font-size: 3.79em;
+      font-weight: 900;
+    }
+  }
+
+  // Numbers item description
+  &__item-desc {
+    margin-top: .6rem;
+
+    span {
+      font-size: 1.19rem;
+      line-height: 1.3rem;
+      font-weight: 300;
+    }
+  }
+}
