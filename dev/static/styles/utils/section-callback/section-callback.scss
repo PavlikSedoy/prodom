@@ -1,0 +1,70 @@
+.section-callback {
+  padding-top: 8.07rem;
+  padding-bottom: 8.14rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // For sliders wrap
+  &__side {
+    flex-basis: calc((100% - 195px) / 2 );
+
+    &>div {
+      margin-top: 4.29rem;
+    }
+  }
+
+  // darken bg on item
+  .darken-layer {
+    @include darken-layer(.3);
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  .swiper-slide {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: z('header-pagination');
+      opacity: 0;
+      transition: .3s ease;
+
+      &:before, &:after {
+        @include pseudo;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 1px;
+        background-color: $yellow;
+      }
+
+      &:after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+
+    // on image hover
+    &:hover {
+      .darken-layer {
+        opacity: .3;
+      }
+
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}

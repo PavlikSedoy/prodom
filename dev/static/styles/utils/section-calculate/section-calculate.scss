@@ -1,0 +1,25 @@
+.section-calculate {
+  padding-top: 3.71rem;
+  padding-bottom: 3.36rem;
+
+  // Aligment flex (content and button)
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // Content
+  &__content {
+    flex-basis: 65%;
+  }
+
+  &__desc {
+    margin-top: 1.14rem;
+
+    p {
+      font-size: 1.57rem;
+      line-height: 1.9rem;
+    }
+  }
+}

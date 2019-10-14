@@ -3,6 +3,8 @@
 @import "utils/mixins";
 @import "utils/fonts";
 @import "./modules/swiper/swiper.scss";
+// @import "./modules/lightgallery/lightgallery.min.css";
+
 
 html {
   font-size: $base-font-size;
@@ -56,6 +58,10 @@ button { outline: none; }
 
 section {
   background-color: $white;
+
+  &.yellow-section {
+    background-color: $yellow;
+  }
 }
 
 .wrapper {
@@ -68,5 +74,7 @@ section {
 @import "utils/section-about/section-about.scss";
 @import "utils/section-clients/section-clients.scss";
 @import "utils/section-numbers/section-numbers.scss";
+@import "utils/section-calculate/section-calculate.scss";
+@import "utils/section-callback/section-callback.scss";
 //Модули
 @import "modules/modules";

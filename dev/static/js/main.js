@@ -31,4 +31,30 @@ $(document).ready(function () {
             },
         });
     }
+
+    // Sertificates slider
+    var mySwiperSertificates = new Swiper('.sertificates-slider', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 12,
+    });
+
+    // Reviews slider
+    var mySwiperReviews = new Swiper('.reviews-slider', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 12,
+    });
+
+    // Sertificates lightbox
+    lightGallery(document.getElementById('sertificatesLightbox'), {
+        thumbnail:true
+    }); 
+
+    // Reviews lightbox
+    lightGallery(document.getElementById('reviewsLightbox'), {
+        thumbnail:true
+    }); 
 });

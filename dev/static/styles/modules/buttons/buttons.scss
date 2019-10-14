@@ -15,4 +15,9 @@
   &:hover {
     cursor: pointer;
   }
+
+  // Button with white background
+  &.btn-white {
+    background-color: $white;
+  }
 }
