@@ -1,0 +1,30 @@
+.section-clients {
+  padding-top: 6.07rem;
+  padding-bottom: 5.36rem;
+
+  &__slider-wr {
+    margin-top: 2.86rem;
+  }
+  
+  &__swiper-container {
+    overflow: hidden;
+  }
+
+  &__in-slide {
+    margin: 0 8px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  &__swiper-wrapper {
+    justify-content: space-between;
+  }
+
+  .swiper-slide {
+    flex-basis: calc((100% - 75px) / 6);
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

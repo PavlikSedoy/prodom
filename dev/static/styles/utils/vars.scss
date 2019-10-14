@@ -38,8 +38,6 @@ $bootstrap-max-width: (
   "xs" : 100%
 );
 
-$marginContainer: map-get($bootstrap-max-width, 'xl');
-
 $content-size: 1024px;
 
 // Darken layer an image

@@ -1,0 +1,22 @@
+.section-about {
+  padding-top: 6.07rem;
+
+  // Text and button
+  &__row.content {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__desc {
+    flex-basis: 790px;  
+  }
+
+  // Items
+  &__row.items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+}
