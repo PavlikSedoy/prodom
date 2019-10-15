@@ -92,3 +92,97 @@
     }
   }
 }
+
+// Second header
+.second-header {
+  position: relative;
+  height: 640px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // Darken Bg
+  .darken-layer {
+    @include darken-layer;
+  }
+
+  // Conten of header
+  &__container {
+    padding-top: 130px;
+    height: 100%;
+    z-index: z('header-content');
+    position: relative;
+    color: $white;
+  }
+
+  &__content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  // page type
+  &__page-type {
+    font-size: 1.29rem;
+    color: $yellow;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  // TItle
+  h1 {
+    margin-top: 1.5rem;
+    font-size: 4.29rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+  }
+
+  &__desc {
+    margin-top: 1.5rem;
+    font-weight: normal;
+    font-size: 1.29rem;
+    line-height: 1.5rem;
+    max-width: 90%;
+  }
+
+  // bread crumbs
+  ul {
+    margin-top: 5.5rem;
+    display: flex;
+
+    a {
+      color: $yellow;
+      font-size: 0.86rem;
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+
+  li {
+    margin-left: 1rem;
+    position: relative;
+    &:before {
+      @include pseudo(block, absolute, $content: '-');
+      left: -0.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $yellow;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  // Requst block position
+  &__request-block {
+    position: absolute;
+    bottom: -2.71rem;
+    right: 0;
+  }
+}

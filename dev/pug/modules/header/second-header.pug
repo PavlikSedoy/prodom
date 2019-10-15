@@ -1,0 +1,21 @@
+header.second-header(style=headerImgPath)
+  .darken-layer
+
+  .container.second-header__container
+    //- Header content
+    .second-header__content
+      span.second-header__page-type УСЛУГА
+      //- Header title
+      h1 #{title}
+      //- Page desctiption in header
+      p.second-header__desc #{desc}
+      //- Breadcrumb
+      ul.second-header__breadcrumb
+        li
+          a(href=breadcrumbLink1) #{breadcrumb1}
+        li
+          a(href=breadcrumbLink2) Строительство зданий
+
+    //- Header request block
+    .second-header__request-block
+      include ../header-request-block/header-request-block.pug
