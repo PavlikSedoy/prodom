@@ -1,0 +1,37 @@
+section.section-news
+  .container.section-news__container
+    h2 Новости о компании
+
+    //- Description and button
+    .section-news__content
+      .section-news__desc.section-desc
+        p Следите за нашей новостной лентой, где мы публикуем последние события из жизни компании, новые проекты, а также полезные статьи.
+      .section-news__btn-wr
+        a.btn(href="/news") ВСЕ НОВОСТИ
+
+    //- News items
+    .section-news__items
+      article.section-news__item
+        a(href="/new-item")
+          .section-news__item-img(style='background-image: url(./static/images/home-page/services-item/services-item-3.jpeg)')
+            .darken-layer
+          .section-news__item-content
+            h4 Строительство фонтана на ул. Советской в г.Бресте
+
+            time(datetime="13-12-2018") 13.12.2018
+      article.section-news__item
+        a(href="/new-item")
+          .section-news__item-img(style='background-image: url(./static/images/home-page/services-item/services-item-3.jpeg)')
+            .darken-layer
+          .section-news__item-content
+            h4 Строительство завода по производству премиксов
+
+            time(datetime="13-12-2018") 13.12.2018
+      article.section-news__item
+        a(href="/new-item")
+          .section-news__item-img(style='background-image: url(./static/images/home-page/services-item/services-item-3.jpeg)')
+            .darken-layer
+          .section-news__item-content
+            h4 Реконструкция очистных сооружений канализации
+
+            time(datetime="13-12-2018") 13.12.2018
