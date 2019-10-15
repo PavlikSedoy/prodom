@@ -1,0 +1,68 @@
+.building-service {
+  padding-top: 6.14rem;
+  padding-bottom: 6.36rem;
+
+  // heading
+  &__desc {
+    margin-top: 1.07rem;
+
+    p {
+      margin-top: 1rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  // Items position
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.88rem;
+  }
+
+  // Item
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    height: 525px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.86rem 2.29rem;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  // Irem darkest bg
+  .darken-layer {
+    @include darken-layer;
+  }
+
+  // Item content
+  &__item-content {
+    position: relative;
+    z-index: z('header-content');
+
+    span {
+      font-size: 0.93rem;
+      color: $yellow;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      margin-top: 0.57rem;
+      font-weight: 500;
+      font-size: 1.57rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+      font-size: 1.14rem;
+      line-height: 1.6rem;
+    }
+  }
+}
