@@ -1,0 +1,31 @@
+.what-made {
+  padding-top: 4.71rem;
+  padding-bottom: 5.64rem;
+
+  // Heading
+  h2, &__desc {
+    text-align: center;
+  }
+
+  &__desc {
+    max-width: 550px;
+    position: relative;
+    margin: auto;
+    margin-top: 1.07rem;
+  }
+
+  // content
+  &__row {
+    margin-top: 1.43rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  h5 {
+    margin-top: 1.29rem;
+    font-size: 1.57rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}
