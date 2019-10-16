@@ -48,6 +48,14 @@ $(document).ready(function () {
         spaceBetween: 12,
     });
 
+    // Reviews slider in review section
+    var mySwiperReviews = new Swiper('.reviews-slider-in-section', {
+        // Optional parameters
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 83
+    });
+
     // Sertificates lightbox
     lightGallery(document.getElementById('sertificatesLightbox'), {
         thumbnail:true

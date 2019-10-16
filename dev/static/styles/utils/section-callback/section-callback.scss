@@ -20,56 +20,63 @@
       margin-top: 4.29rem;
     }
   }
+}
 
+.review-slide {
+  position: relative;
+  box-shadow: 0px 0px 10px -1px rgba($default-text, 0.3);
+  
   // darken bg on item
   .darken-layer {
     @include darken-layer(.3);
     opacity: 0;
     transition: .3s ease;
   }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-  .swiper-slide {
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
+  span {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: z('header-pagination');
+    opacity: 0;
+    transition: .3s ease;
 
-    span {
-      display: block;
-      position: absolute;
-      width: 56px;
-      height: 56px;
+    &:before, &:after {
+      @include pseudo;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      z-index: z('header-pagination');
-      opacity: 0;
-      transition: .3s ease;
-
-      &:before, &:after {
-        @include pseudo;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 1px;
-        background-color: $yellow;
-      }
-
-      &:after {
-        transform: translate(-50%, -50%) rotate(90deg);
-      }
+      width: 100%;
+      height: 1px;
+      background-color: $yellow;
     }
 
-    // on image hover
-    &:hover {
-      .darken-layer {
-        opacity: .3;
-      }
-
-      span {
-        opacity: 1;
-      }
+    &:after {
+      transform: translate(-50%, -50%) rotate(90deg);
     }
   }
+
+  // on image hover
+  &:hover {
+    .darken-layer {
+      opacity: .3;
+    }
+
+    span {
+      opacity: 1;
+    }
+  }
+}
+
+.sertificate-slide {
+  box-shadow: 0px 0px 10px -1px rgba($default-text, 0.3);
 }

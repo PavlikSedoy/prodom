@@ -1,0 +1,32 @@
+.advantages-section {
+  padding-top: 7rem;
+  padding-bottom: 2.5rem;
+
+  &__content {
+    margin-top: 4.43rem;
+  }
+
+  &__item {
+    margin-bottom: 3.93rem;
+    display: flex;
+
+    &_check {
+      @include check;
+      margin-right: 2.07rem;
+    }
+
+    h5 {
+      font-size: 1.57rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 0.79rem;
+      line-height: 1.3rem;
+    }
+
+    &_content {
+      max-width: 420px;
+    }
+  }
+}

@@ -78,3 +78,19 @@ $z-indexes: (
   opacity: $opacity;
   z-index: z("darken-layer");
 }
+
+@mixin check {
+  position: relative;
+    background-color: $yellow;
+    width: 33px;
+    height: 33px;
+
+    &:after {
+      @include pseudo;
+      top: -5px;
+      right: -5px;
+      width: 36px;
+      height: 29px;
+      background: 50% 50%/contain no-repeat url('../images/home-page/numbers/check.svg');
+    }
+}

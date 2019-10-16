@@ -1,0 +1,20 @@
+.section-reviews {
+  padding-top: 6rem;
+  padding-bottom: 6.35rem;
+
+  // heading
+  h2, &__desc {
+    text-align: center;
+  }
+
+  &__desc {
+    margin: auto;
+    max-width: 570px;
+    margin-top: 1rem;
+  }
+
+  // slider
+  &__slider {
+    margin-top: 3.43rem;
+  }
+}
