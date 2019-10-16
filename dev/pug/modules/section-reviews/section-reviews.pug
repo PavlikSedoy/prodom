@@ -1,25 +1,39 @@
 section.section-reviews
   .container
-    h2 Отзывы и благодарности
+    h2 #{reviewsTitle}
     .section-desc.section-reviews__desc
-      p К каждому заказчику мы находим индивидуальный подход и формируем прозрачную договоренность. Мы за честное и продуктивное сотрудничество.
+      p #{reviewsDesc}
 
     //- content
     .reviews-slider-in-section.section-reviews__slider
       .swiper-wrapper#reviewsLightbox
-        a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-1.jpg")
-          img(src="./static/images/services-building-page/reviews/review-1.png", alt="Sertificate")
-          .darken-layer
-          span
-        a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-2.jpg")
-          img(src="./static/images/services-building-page/reviews/review-2.png", alt="Sertificate")
-          .darken-layer
-          span
-        a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-3.jpg")
-          img(src="./static/images/services-building-page/reviews/review-3.png", alt="Sertificate")
-          .darken-layer
-          span
-        a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-4.jpg")
-          img(src="./static/images/services-building-page/reviews/review-4.png", alt="Sertificate")
-          .darken-layer
-          span
+        if pageClass == 'services-page-first'
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-1.jpg")
+            img(src="./static/images/services-building-page/reviews/review-1.png", alt="Alt")
+            .darken-layer
+            span
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-2.jpg")
+            img(src="./static/images/services-building-page/reviews/review-2.png", alt="Sertificate")
+            .darken-layer
+            span
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-3.jpg")
+            img(src="./static/images/services-building-page/reviews/review-3.png", alt="Sertificate")
+            .darken-layer
+            span
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-4.jpg")
+            img(src="./static/images/services-building-page/reviews/review-4.png", alt="Sertificate")
+            .darken-layer
+            span
+        else
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-1.jpg")
+            img(src="./static/images/services-building-page/reviews/review-1.png", alt="Alt")
+            .darken-layer
+            span
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-2.jpg")
+            img(src="./static/images/services-building-page/reviews/review-2.png", alt="Sertificate")
+            .darken-layer
+            span
+          a.swiper-slide.review-slide(href="./static/images/services-building-page/reviews/review-big-3.jpg")
+            img(src="./static/images/services-building-page/reviews/review-3.png", alt="Sertificate")
+            .darken-layer
+            span

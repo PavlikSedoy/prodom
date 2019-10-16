@@ -53,7 +53,8 @@ $(document).ready(function () {
         // Optional parameters
         loop: false,
         slidesPerView: 4,
-        spaceBetween: 83
+        spaceBetween: 83,
+        centerInsufficientSlides: true
     });
 
     // Sertificates lightbox

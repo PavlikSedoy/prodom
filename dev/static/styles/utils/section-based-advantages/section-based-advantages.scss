@@ -1,0 +1,69 @@
+.based-advantages {
+  padding: 5.36rem 0;
+  background: 100% 100%/cover no-repeat url('../images/construction-design/based-advantages/bg.jpg');
+  color: $white;
+
+  // Darkest bg
+  .darken-layer {
+    @include darken-layer;
+  }
+
+  // Content
+  .container {
+    z-index: z("header-content");
+    position: relative;
+  }
+
+  &_advantages-wr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // Item
+  &__item {
+    margin-top: 6.29rem;
+    flex-basis: calc(50% - 50px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Image part in item
+  &__img-wr {
+    flex-basis: 87px;
+    position: relative;
+    align-self: flex-start;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:after {
+      @include pseudo;
+      left: 0;
+      bottom: -2.5rem;
+      height: 5px;
+      width: 50px;
+      background-color: $yellow;
+    }
+  }
+
+  // Content part of item
+  &__item_content {
+    flex-basis: calc(100% - 113px);
+  }
+
+  h4 {
+    font-size: 1.57rem;
+    font-weight: 700;
+  }
+
+  &__desc {
+    margin-top: 1.93rem;
+
+    p {
+      font-size: 1.29rem;
+      line-height: 1.5rem;
+    }
+  }
+}

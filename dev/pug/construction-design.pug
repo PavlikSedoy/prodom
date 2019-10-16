@@ -2,7 +2,7 @@ extends template/main
 
 block variables
 	- var title = 'Строительство зданий и сооружений'
-	- var pageClass = 'services-page-first'
+	- var pageClass = 'construction-design'
 	- var headerName = 'second-header'
 	- var headerImgPath = 'background-image: url(./static/images/services-building-page/header.jpeg)'
 	- var title = 'Строительство зданий и сооружений'
@@ -12,15 +12,15 @@ block variables
 	- var breadcrumb2 = "Строительство зданий"
 	- var breadcrumbLink2 = "/services-first.html"
 	- var portfolioDesc = "Ознакомьтесь с нашим портфолио, которое мы регулярно пополняем реализованными проектами. За 10 лет работы их накопилось около 200, разного масшаба и сложности."
-	- var reviewsTitle = "Отзывы и благодарности"
+	- var reviewsTitle = "Сертификаты соответствия"
 	- var reviewsDesc = "К каждому заказчику мы находим индивидуальный подход и формируем прозрачную договоренность. Мы за честное и продуктивное сотрудничество."
 
 block content
-	include ./modules/building-service-section/building-service-section.pug
-	include ./modules/section-what-made/section-what-made.pug
+	include ./modules/section-project-work/section-project-work.pug
+	include ./modules/section-based-advantages/section-based-advantages.pug
+	include ./modules/section-calculate/section-calculate.pug
 	include ./modules/section-work-parts/section-work-parts.pug
 	include ./modules/section-portfolio/section-portfolio.pug
-	include ./modules/section-advantages/section-advantages.pug
 	include ./modules/section-reviews/section-reviews.pug
 	include ./modules/buttom-request-block/buttom-request-block.pug
 	include ./modules/footer/footer.pug
