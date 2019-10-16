@@ -1,0 +1,48 @@
+section.buttom-request
+  .container
+    //- heading
+    h2 Расчитаем стоимость проекта или окажем консультацию
+    p.buttom-request__desc Оставьте ваши контакты и мы свяжемся с вами
+
+    //- section content
+    .row.buttom-request__row
+      //- Form
+      form.buttom-request__form
+        //- Inputs
+        .buttom-request__input-wr
+          input.buttom-request__input(name="bottomFormName" placeholder="Имя / компанию" type="text")
+        .buttom-request__input-wr
+          input.buttom-request__input(name="bottomFormPhone" placeholder="Номер телефона" type="text" inputMode="tel")
+        //- Textarea
+        .buttom-request__textarea-wr
+          textarea.buttom-request__textarea(id="bottomFormMessage" cols="30" rows="10" placeholder="Задачи, которые требуется решить ")
+        //- File
+        .buttom-request__file-wr
+          label(for="bottomFormFile") Прикрепить файл
+          input.buttom-request__file#bottomFormFile(name="bottomFormFile" type="file")
+          span#fileName
+        //- Submit button
+        .buttom-request__submit-wr
+          a.btn.buttom-request__submit(type="submit") Отправить
+      //- Contacts
+      .buttom-request__contacts
+        //- Contact item
+        .buttom-request__contact-item
+          span Приемная руководителя
+          a(href="tel:+375162209228") +375 (162) 20-92-28 (тел/факс)
+        //- Contact item
+        .buttom-request__contact-item
+          span Планово-технический отдел
+          a(href="tel:+375162209314") +375 (162) 20-93-14
+        //- Contact item
+        .buttom-request__contact-item
+          span Юридический отдел
+          a(href="tel:+375162208458") +375 (162) 20-84-58
+        //- Contact item
+        .buttom-request__contact-item
+          span Отдел снабжения
+          a(href="tel:+375162209229") +375 (162) 20-92-29 (тел/факс)
+        //- Contact item
+        .buttom-request__contact-item
+          span Бухгалтерия
+          a(href="tel:+375162209304") +375 (162) 20-93-04 (тел/факс)

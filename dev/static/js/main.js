@@ -74,3 +74,14 @@ $(document).ready(function () {
         spaceBetween: 20,
     });
 });
+
+// On add file to bottom form
+$('#bottomFormFile').change( function () {
+    var fileName = $(this).val();
+
+    if (/^\s*$/.test(fileName)) {
+        $('#fileName').text('');
+    } else {
+        $("#fileName").text(fileName.replace("C:\\fakepath\\", ""))
+    }
+});

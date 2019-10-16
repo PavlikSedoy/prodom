@@ -1,0 +1,125 @@
+.buttom-request {
+  padding: 3.57rem 0;
+  background-color: $light-gray-bg;
+
+  // heading
+  &__desc {
+    margin-top: 0.71rem;
+    font-size: 1.57rem;
+  }
+
+  // Form and contacts position
+  &__row {
+    margin-top: 3.57rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Form
+  &__form {
+    flex-basis: calc(100% - 325px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // Inputs
+  &__input-wr {
+    flex-basis: calc(50% - 15px);
+  }
+
+  &__input {
+    width: 100%;
+    height: 42px;
+    background-color: $white;
+    border: none;
+    padding-left: 18px;
+    font-style: italic;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  // Textarea
+  &__textarea-wr {
+    margin-top: 30px;
+    flex-basis: 100%;
+  }
+
+  &__textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 18px;
+    padding-top: 18px;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  // Contacts
+  &__contacts {
+    flex-basis: 260px;
+  }
+
+  // File
+  &__file-wr {
+    flex-basis: 100%;
+    margin-top: 2.5rem;
+
+    label {
+      font-style: italic;
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    span {
+      margin-left: 1rem;
+    }
+  }
+
+  &__file {
+    display: none;
+  }
+
+  // Submit
+  &__submit-wr {
+    margin-top: 1.64rem;
+  }
+
+  &__submit {
+    width: 205px;
+    text-transform: capitalize;
+  }
+
+  // Contacts
+  &__contacts {
+    border: 2px solid $yellow;
+    padding: 1.07rem 1.79rem;
+    align-self: flex-start;
+
+    span, a {
+      display: inline-block;
+      font-size: 0.86rem;
+      text-decoration: none;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+    a {
+      line-height: 1rem;
+      color: $default-text;
+    }
+  }
+
+  &__contact-item {
+    margin-top: 1.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
