@@ -1,0 +1,20 @@
+.object-gallery {
+  padding: 6.07em 0;
+
+  &__gallery {
+    margin-top: 2.57rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      flex-basis: calc((100% - 28px) / 3);
+      display: block;
+      margin-top: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

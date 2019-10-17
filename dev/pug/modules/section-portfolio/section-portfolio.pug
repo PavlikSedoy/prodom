@@ -2,12 +2,16 @@ section.section-portfolio
   //- Portfolio title an description
   .container.section-portfolio__container
     .section-portfolio__content
-      h2 Наши проекты
+      if pageClass == 'current-project-page'
+        h2 Другие проекты
+      else
+        h2 Наши проекты
       .section-desc.section-portfolio__desc
         p #{portfolioDesc}
     //- Portfolio button
-    .section-portfolio__btn-wr
-      a.btn(href="/portfolio") ПОРТФОЛИО
+    if pageClass !== 'current-project-page'
+      .section-portfolio__btn-wr
+        a.btn(href="/portfolio") ПОРТФОЛИО
 
   .section-portfolio__slider-wr
     .section-portfolio__slider

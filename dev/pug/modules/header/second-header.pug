@@ -6,9 +6,13 @@ header.second-header(style=headerImgPath)
     .second-header__content
       span.second-header__page-type #{pageType}
       //- Header title
-      h1 #{title}
+      if pageClass == 'current-project-page'
+        h1.current-project #{title}
+      else
+        h1 #{title}
       //- Page desctiption in header
-      p.second-header__desc #{desc}
+      if pageClass !== 'current-project-page'
+        p.second-header__desc #{desc}
       //- Breadcrumb
       ul.second-header__breadcrumb
         li
@@ -19,6 +23,7 @@ header.second-header(style=headerImgPath)
           li
             a(href=breadcrumbLink3) #{breadcrumb3}
 
-    //- Header request block
-    .second-header__request-block
-      include ../header-request-block/header-request-block.pug
+    if requstBlock !== 'false'
+      //- Header request block
+      .second-header__request-block
+        include ../header-request-block/header-request-block.pug

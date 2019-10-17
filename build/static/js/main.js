@@ -72,8 +72,13 @@ $(document).ready(function () {
         thumbnail:true
     }); 
 
-    // Examples lightbox
+    // Cex lightbox
     lightGallery(document.getElementById('cexGallery'), {
+        thumbnail:true
+    }); 
+    
+    // Project lightbox
+    lightGallery(document.getElementById('objectGallery'), {
         thumbnail:true
     }); 
 

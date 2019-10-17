@@ -1,0 +1,22 @@
+extends template/main
+
+block variables
+	- var pageType = 'ПРОЕКТ'
+	- var title = 'Таможенные склады и административное здание на пагранпереходе “Козловичи-2”'
+	- var pageClass = 'current-project-page'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/services-building-page/header.jpeg)'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Строительство зданий"
+	- var breadcrumbLink2 = "/services-first.html"
+	- var breadcrumb3 = "Таможенные склады “Козловичи 2"
+	- var breadcrumbLink4 = "/current-project.html"
+	- var requstBlock = "false"
+
+block content
+	include ./modules/section-object-gallery/section-object-gallery.pug
+	include ./modules/section-project-info/section-project-info.pug
+	include ./modules/section-portfolio/section-portfolio.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug

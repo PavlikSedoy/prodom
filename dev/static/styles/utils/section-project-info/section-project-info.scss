@@ -1,0 +1,47 @@
+.project-info {
+  background-color: $yellow;
+  padding-top: 3.93rem;
+  padding-bottom: 4.79rem;
+  margin-bottom: 6.14rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__about {
+    flex-basis: 625px;
+
+    h3 {
+      font-size: 2.29rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  &__main-info {
+    flex-basis: 420px;
+    border-left: 2px solid rgba($default-text, .3);
+    padding-left: 40px;
+
+    h3 {
+      font-size: 1.57rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+    }
+
+    li {
+      line-height: 1.3rem;
+    }
+
+    span {
+      font-weight: 700;
+      margin-right: 3px;
+    }
+  }
+}
