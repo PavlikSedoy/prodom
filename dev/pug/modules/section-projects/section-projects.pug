@@ -1,0 +1,146 @@
+section.section-projects
+  .container
+    //- Heading
+    h2 Проекты компании
+    .section-desc.section-projects__desc
+      p За годы работы компания “Продом” успела поучаствовать в абсолютно разных строительных проектах, начиная от реконструкции жилых домов и заканчивая масшабными многофункциональными бизнес-центрами.
+
+    //- Filters
+    .row.section-projects__filters-row
+      //- Filter item
+      .section-projects__filters-item-wr
+        label(for="buildingType") По типу сооружения:
+        select#buildingType
+          option(value="hide")
+          option(value="Жилые здания") Жилые здания
+          option(value="Общественные здания") Общественные здания
+          option(value="Промышленные здания") Промышленные здания
+      //- Filter item
+      .section-projects__filters-item-wr
+        label(for="workType") По видам работ:
+        select#workType
+          option(value="hide")
+          option(value="Генподрядчик") Генподрядчик
+          option(value="Монолитные работы") Монолитные работы
+          option(value="Отделочные работы") Отделочные работы
+          option(value="Монтаж инженерных сетей") Монтаж инженерных сетей
+          option(value="Монтаж металлоконструкций") Монтаж металлоконструкций
+          option(value="Проектирование") Проектирование
+          option(value="Реконстркуция") Реконстркуция
+          option(value="Устройство фасадов") Устройство фасадов
+          option(value="Устройство кровли") Устройство кровли
+      //- Reset filters button
+      a.btn#resetFilters СБРОСИТЬ
+
+    .section-projects__projects
+      article.services-item.double(style='background-image: url(./static/images/home-page/portfolio/portfolio-1.jpeg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Таможенные склады и административное здание на погранпереходе “Козловичи-2”
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/home-page/portfolio/portfolio-2.jpeg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Многоквартирный жилой дом по ул. 17-ого сентября
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/home-page/portfolio/portfolio-3.JPG)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Реконструкция сооружений канализации в Бресте
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-4.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Автозаправочная станция АЗС «Татнефть» по ул. Катин Бор в г. Бресте
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-5.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Завод по производству премиксов и суперконцентратов для молодняка
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-6.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Жилой дом с автомобильной парковкой по улице Морозова в городе Бресте
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item.double(style='background-image: url(./static/images/projects-page/projects/project-7.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Строительство «Футбольного манежа по улице Луцкой в городе Бресте»
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-8.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Гостиничный комплекс с объектами общественного питания  на погранпереходе “Козловичи-2”
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-9.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Медицинский центр «НОВАМЕД» (первый комплекс)
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-10.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Здание «Белагропромбанка» в городе Каменец
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item.double(style='background-image: url(./static/images/projects-page/projects/project-11.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Гипермаркет «Алми» г. Брест
+            span.services-item__href Перейти
+          .services-item__col
+            span
+      article.services-item(style='background-image: url(./static/images/projects-page/projects/project-12.jpg)')
+        .darken-layer
+        a(href="/current-project")
+          .services-item__col
+            span.services-item__type 2018
+            h4 Ресторан «Shalet Greenwood»
+            span.services-item__href Перейти
+          .services-item__col
+            span
+
+    .row.section-projects__more-wr
+      a.section-projects__more#moreProjects Больше проектов

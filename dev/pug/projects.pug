@@ -1,0 +1,11 @@
+extends template/main
+
+block variables
+	- var pageClass = 'projects'
+	- var headerName = 'third-header'
+	- var title = 'Проекты компании'
+
+block content
+	include ./modules/section-projects/section-projects.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug
