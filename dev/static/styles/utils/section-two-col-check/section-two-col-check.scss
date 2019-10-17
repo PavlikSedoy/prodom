@@ -37,4 +37,32 @@
       font-size: 0.86rem;
     }
   }
+
+  // services page
+  &.services-page {
+    background: 50% 50%/cover no-repeat url('../images/services/advantages-bg.jpeg');
+    color: $white;
+    margin-top: 6.43rem;
+
+    // Darkest bg
+    .darken-layer {
+      @include darken-layer;
+    }
+
+    // content
+    .container {
+      z-index: z("header-content");
+      position: relative;
+    }
+
+    &:after {
+      @include pseudo;
+      bottom: 0;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background-color: $yellow;
+      z-index: z("header-content");
+    }
+  }
 }

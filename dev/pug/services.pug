@@ -1,0 +1,19 @@
+extends template/main
+
+block variables
+	- var pageType = 'Услуги'
+	- var title = 'Услуги предприятия'
+	- var pageClass = 'services'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/services/header-bg.jpeg)'
+	- var desc = 'Предлагаем ознакомится с перечнем наших услуг в сфере строительства.'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Услуги"
+	- var breadcrumbLink2 = "/services.html"
+
+block content
+	include ./modules/section-about/section-about.pug
+	include ./modules/section-two-col-check/section-two-col-check.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug

@@ -1,13 +1,20 @@
 section.section-about
   .container
-    h2 Строительная компания «Продом»
+    if pageClass == 'services'
+      h2 Услуги
 
-    //- Row description and button
-    .row.section-about__row.content
-      .section-about__desc.section-desc
+      //- Row description and button
+      .section-about__desc.section-desc.services-page
         p ООО «Продом» работает на рынке строительных услуг и ведет строительство промышленных, гражданских объектов, жилья, объектов медицинского и социально-культурного назначения уже более 9 лет. Качественно и в срок выполняет весь комплекс строительных работ.
-      .section-about__btn
-        a.btn(href="/about") О КОМПАНИИ
+    else
+      h2 Строительная компания «Продом»
+
+      //- Row description and button
+      .row.section-about__row.content
+        .section-about__desc.section-desc
+          p ООО «Продом» работает на рынке строительных услуг и ведет строительство промышленных, гражданских объектов, жилья, объектов медицинского и социально-культурного назначения уже более 9 лет. Качественно и в срок выполняет весь комплекс строительных работ.
+        .section-about__btn
+          a.btn(href="/about") О КОМПАНИИ
 
     //- Row for services item
     .row.section-about__row.items

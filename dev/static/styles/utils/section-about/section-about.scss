@@ -1,6 +1,10 @@
 .section-about {
   padding-top: 6.07rem;
 
+  &__desc.services-page {
+    margin-top: 1rem;
+  }
+
   // Text and button
   &__row.content {
     margin-top: 15px;
