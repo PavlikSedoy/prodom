@@ -1,0 +1,122 @@
+.section-assortment {
+  padding-top: 6.07em;
+  padding-bottom: 3.57rem;
+
+  // Heading
+  &__desc {
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  // Content
+  // Produts
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.57rem;
+  }
+
+  // Request button block
+  &__request {
+    margin-top: 3.57rem;
+  }
+
+  &__request-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  &__request-text {
+    flex-basis: calc(100% - 280px);
+
+    p {
+      margin-top: 1rem;
+      line-height: 1.3rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+// Product
+.product {
+  height: 177px;
+  flex-basis: calc((100% - 28px) / 3);
+  position: relative;
+  margin-top: 1rem;
+  padding: 1.67rem;
+  display: flex;
+  align-items: flex-end;
+  transition: .3s ease;
+  box-shadow: 0px 0px 33px -1px rgba($default-text, 0);
+
+  // If double section
+  &.double {
+    flex-basis: calc(66.6% - 4px);
+  }
+
+  // Darkest bg in item
+  .darken-layer {
+    @include darken-layer(.6);
+  }
+
+  // Product content
+  &__content {
+    z-index: z('header-content');
+    position: relative;
+    width: 100%;
+  }
+
+  h4 {
+    color: $white;
+    font-size: 1.57rem;
+    font-weight: 500;
+    margin-bottom: .67rem;
+  }
+
+  span {
+    color: $yellow;
+    font-style: italic;
+    font-size: 0.93rem;
+  }
+  
+  // Plus
+  &__plus {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s ease;
+
+    &:before, &:after {
+      @include pseudo;
+      left: 50%;
+      top: 50%;
+      height: 1px;
+      width: 100%;
+      background-color: $yellow;
+      transform: translate(-50%, -50%);
+    }
+    
+    &:after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  // On hover
+  &:hover {
+    box-shadow: 0px 0px 33px -1px rgba($default-text,0.5);
+
+    .product__plus {
+      opacity: 1;
+    }
+  }
+}

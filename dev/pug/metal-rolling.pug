@@ -1,0 +1,20 @@
+extends template/main
+
+block variables
+	- var pageType = 'ПРОДУКЦИЯ'
+	- var title = 'Продажа металлопроката'
+	- var pageClass = 'metal-rolling'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/metal-rolling/header-bg.jpg)'
+	- var desc = 'ООО «Продом» предлагает Вам сотрудничество по поставке трубной продукции и металлопроката.'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Металлопрокат"
+	- var breadcrumbLink2 = "/metal-rolling.html"
+
+block content
+	include ./modules/section-assortment/section-assortment.pug
+	include ./modules/section-two-col-check/section-two-col-check.pug
+	include ./modules/section-partners/section-partners.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug

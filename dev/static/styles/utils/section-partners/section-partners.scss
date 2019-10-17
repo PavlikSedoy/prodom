@@ -1,0 +1,38 @@
+.section-partners {
+  padding: 4.29rem 0;
+
+  // heading
+  &__desc p {
+    margin-top: 1rem;
+  }
+
+  // Partners
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 2.36rem;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0 30px;
+    flex-basis: calc((100% - 300px) / 4);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // Burse
+  &__burse {
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+
+    span {
+      margin-left: 1.71rem;
+      color: $green-text;
+    }
+  }
+}
