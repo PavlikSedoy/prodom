@@ -1,0 +1,71 @@
+extends template/main
+
+block variables
+	- var pageType = 'УСЛУГА'
+	- var title = 'Изготовление металлоконструкций'
+	- var pageClass = 'metal-page'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/services/header-bg.jpeg)'
+	- var desc = 'Производство металлоконструкций любой сложности и обработка металлопроката.'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Металлопрокат"
+	- var breadcrumbLink2 = "/metal-rolling.html"
+	- var breadcrumb3 = "Изготовление металлоконструкций"
+	- var breadcrumbLink3 = "/metal-first.html"
+
+block content
+	.container.metal-page__container
+		asside.metal-page__asside
+			ul
+				li
+					a.metal-page__aside-link.active(href="/metal-first.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-1.svg", alt="nav")
+						.metal-page__aside-text
+							span Изготовление металлоконструкций
+				li
+					a.metal-page__aside-link(href="/metal-second.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-2.svg", alt="nav")
+						.metal-page__aside-text
+							span Арматура
+				li
+					a.metal-page__aside-link(href="/metal-first.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-3.svg", alt="nav")
+						.metal-page__aside-text
+							span Профиль
+				li
+					a.metal-page__aside-link(href="/metal-first.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-4.svg", alt="nav")
+						.metal-page__aside-text
+							span Лист
+				li
+					a.metal-page__aside-link(href="/metal-first.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-5.svg", alt="nav")
+						.metal-page__aside-text
+							span Двутавр
+				li
+					a.metal-page__aside-link(href="/metal-first.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-6.svg", alt="nav")
+						.metal-page__aside-text
+							span Швеллер
+				li
+					a.metal-page__aside-link(href="/metal-first.html")
+						.metal-page__aside-icon
+							img(src="./static/images/metal-pages/aside-icons/icon-7.svg", alt="nav")
+						.metal-page__aside-text
+							span Труба
+		.metal-page__main
+			include ./modules/section-metal-assortment/section-metal-assortment.pug
+			include ./modules/section-examples/section-examples.pug
+			include ./modules/section-metal-processing/section-metal-processing.pug
+			include ./modules/section-why-we/section-why-we.pug
+			include ./modules/section-cex/section-cex.pug
+			include ./modules/section-cex-gallery/section-cex-gallery.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug

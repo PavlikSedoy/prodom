@@ -1,0 +1,48 @@
+.why-we {
+  &__items-wr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.29rem;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: calc(50% - 6px);
+    margin-top: 12px;
+    position: relative;
+    background-color: $light-gray-bg;
+    padding: 1rem;
+    font-size: 1.29rem;
+    overflow: hidden;
+
+    h4 {
+      font-weight: 500;
+      z-index: 2;
+      position: relative;
+    }
+
+    p {
+      font-weight: 400;
+      z-index: 2;
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      font-size: 13.36rem;
+      top: calc(50% + 16px);
+      transform: translateY(-50%);
+      right: 1rem;
+      font-weight: 900;
+      z-index: 1;
+
+      &.dark {
+        color: $yellow;
+      }
+
+      &.light {
+        color: rgba($yellow, .5);
+      }
+    }
+  }
+}

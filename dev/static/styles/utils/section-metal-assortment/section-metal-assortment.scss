@@ -1,0 +1,32 @@
+.metal-assortment {
+  // Items
+  &__assortment-list {
+    margin-top: .71rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    padding-right: 20px;
+    flex-basis: 188px;
+    margin: 0;
+    margin-top: 2.21rem;
+
+    &:nth-child(4n) {
+      padding-right: 0;
+    }
+  }
+
+  &__img-wr {
+    width: 188px;
+    height: 155px;
+    overflow: hidden;
+    margin-bottom: 0.86rem;
+
+    img {
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}

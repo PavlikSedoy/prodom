@@ -1,0 +1,16 @@
+.cex {
+  padding: 4.07rem 0;
+
+  &__contacts {
+    margin-top: 1rem;
+    background-color: $yellow;
+    font-size: 1.29em;
+    padding: 15px 28px;
+    display: flex;
+    justify-content: space-between;
+
+    span:first-child {
+      font-weight: 500;
+    }
+  }
+}

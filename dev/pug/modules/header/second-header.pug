@@ -15,6 +15,9 @@ header.second-header(style=headerImgPath)
           a(href=breadcrumbLink1) #{breadcrumb1}
         li
           a(href=breadcrumbLink2) #{breadcrumb2}
+        if breadcrumb3
+          li
+            a(href=breadcrumbLink3) #{breadcrumb3}
 
     //- Header request block
     .second-header__request-block

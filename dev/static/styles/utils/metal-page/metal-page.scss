@@ -1,0 +1,98 @@
+// Metal pages
+.metal-page {
+  &__container {
+    display: flex;
+    padding: 6.14rem 0;
+    justify-content: space-between;
+  }
+
+  &__main {
+    h2 {
+      margin-top: 2.71em;
+  
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  
+    ul {
+      margin-top: 1rem;
+    }
+  
+    li {
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+
+  // asside nav
+  &__asside {
+    background: $light-gray-bg;
+    flex-basis: 280px;
+    padding: 5px 0;
+    align-self: flex-start;
+  }
+
+  &__aside-icon {
+    flex-basis: 52px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__aside-text {
+    flex-basis: calc(100% - 60px);
+    margin-left: 8px;
+
+    span {
+      font-size: 1.14rem;
+      line-height: 1.4rem;
+      color: $default-text;
+      text-decoration: none;
+      position: relative;
+
+      &:after {
+        @include pseudo;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: $yellow;
+      }
+    }
+  }
+
+  &__aside-link {
+    display: flex;
+    padding: 0 5px;
+    width: 100%;
+    align-items: center;
+
+    &.active {
+      .metal-page__aside-icon {
+        background-color: $yellow;
+      }
+
+      span {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // content
+  &__main {
+    flex-basis: calc(100% - 325px);
+
+    p {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      margin-top: 1rem;
+    }
+  }
+}

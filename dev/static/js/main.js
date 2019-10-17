@@ -67,6 +67,16 @@ $(document).ready(function () {
         thumbnail:true
     }); 
 
+    // Examples lightbox
+    lightGallery(document.getElementById('examplesGallery'), {
+        thumbnail:true
+    }); 
+
+    // Examples lightbox
+    lightGallery(document.getElementById('cexGallery'), {
+        thumbnail:true
+    }); 
+
     // Portfolio-slider
     var mySwiperPortfolio = new Swiper('.section-portfolio__slider', {
         // Optional parameters
@@ -85,4 +95,9 @@ $('#bottomFormFile').change( function () {
     } else {
         $("#fileName").text(fileName.replace("C:\\fakepath\\", ""))
     }
+});
+
+// Show/hide examples gallery in metal page
+$('#examplesHeader').click( function() {
+    $('#examplesToggleBox').slideToggle();
 });
