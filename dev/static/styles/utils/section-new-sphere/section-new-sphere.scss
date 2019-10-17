@@ -1,0 +1,78 @@
+.new-sphere {
+  padding: 6.07em 0;
+
+  // Heading
+  &__desc {
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  // Content
+  // List of new sphere
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.21rem;
+  }
+
+  &__item {
+    flex-basis: calc(50% - 20px);
+    height: 370px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+
+    &:first-child {
+      background: 50% 50%/cover no-repeat url('../images/building-in-brest/new-sphere/new-sphere-1.JPG');
+    }
+    &:last-child {
+      background: 50% 50%/cover no-repeat url('../images/building-in-brest/new-sphere/new-sphere-2.JPG');
+    }
+  }
+
+  &__item-content {
+    z-index: z('header-content');
+    position: relative;
+    padding: 2.64rem;
+    color: $white;
+
+    h4 {
+      font-size: 1.71rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  // Darken bg in items
+  .darken-layer {
+    @include darken-layer;
+  }
+
+  // Link to site
+  &__target {
+    margin-top: 40px;
+  }
+}
+
+// Link to site
+.target {
+  padding: 4.36rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $yellow;
+
+  &__content {
+    flex-basis: calc(100% - 313px);
+
+    p {
+      font-size: 1.57rem;
+      line-height: 1.9rem;
+    }
+  }
+}

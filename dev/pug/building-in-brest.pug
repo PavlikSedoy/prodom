@@ -1,0 +1,17 @@
+extends template/main
+
+block variables
+	- var title = 'Долевое строительство в Бресте'
+	- var pageClass = 'building-in-brest'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/building-in-brest/header-bg.jpg)'
+	- var desc = 'Осуществляем строительство жилой и коммерческойнедвижимости.'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Долевое строительство"
+	- var breadcrumbLink2 = "/building-in-brest.html"
+
+block content
+	include ./modules/section-new-sphere/section-new-sphere.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug
