@@ -1,0 +1,19 @@
+extends template/main
+
+block variables
+	- var pageType = 'НОВОСТЬ'
+	- var title = 'Строительство фонтана на ул. Советской в г.Бресте'
+	- var pageClass = 'current-post'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/current-post/header-bg.jpg)'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Новости"
+	- var breadcrumbLink2 = "/blog.html"
+	- var breadcrumb3 = "Строительство фонтана на улице... "
+	- var breadcrumbLink3 = "/current-post.html"
+
+block content
+	include ./modules/current-post-content/current-post-content.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug

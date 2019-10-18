@@ -81,6 +81,11 @@ $(document).ready(function () {
     lightGallery(document.getElementById('objectGallery'), {
         thumbnail:true
     }); 
+    
+    // Post lightbox
+    lightGallery(document.getElementById('postGallery'), {
+        thumbnail:true
+    }); 
 
     // Portfolio-slider
     var mySwiperPortfolio = new Swiper('.section-portfolio__slider', {
