@@ -1,1 +1,58 @@
 footer.footer
+  .container.footer__container
+    .footer__col
+      span.footer__website PRODOMSTROY.BY
+      span.footer__ooo © 2010-2019, ООО "ПРОДОМ" <br>УНП 290960928
+      span.footer__address 224025, Республика Беларусь, <br> г. Брест , ул. Комсомольская 23Б
+      span.footer__work-tiem Пн - Пт : 8:00 - 17:00
+      span.footer__contact-title Приемная руководителя:
+      a.footer__phone(href="tel://+375162209228") +375 (162) 20-92-28
+      a.footer__mail(href="mailto://info@prodomstroy.by") info@prodomstroy.by
+      a.btn.get-call Заказать звонок
+    .footer__col
+      .footer__row
+        .footer__col-in-row
+          a.footer__page-type(href="/services.html") Услуги
+          a.footer__in-type-page(href="/") Строительство зданий <br>и сооружений
+          a.footer__in-type-page(href="/") Проектирование домов
+          a.footer__in-type-page(href="/") Долевое строительство
+        .footer__col-in-row
+          a.footer__page-type(href="/services.html") Контакты
+          a.footer__in-type-page(href="/") О компании
+          a.footer__in-type-page(href="/") Вакансии
+          a.footer__in-type-page(href="/") Новости
+      .footer__row
+        .footer__col-in-row
+          a.footer__page-type(href="/services.html") Металлопрокат
+          a.footer__in-type-page(href="/") Производство 
+          a.footer__in-type-page(href="/") Арматура
+          a.footer__in-type-page(href="/") Двутавр
+          a.footer__in-type-page(href="/") Лист
+          a.footer__in-type-page(href="/") Профиль
+          a.footer__in-type-page(href="/") Труба
+          a.footer__in-type-page(href="/") Швеллер
+        .footer__col-in-row
+          a.footer__page-type(href="/services.html") Проекты
+
+          .footer__social
+            a.footer__social-link(href="/")
+              include ../../../static/images/footer/social/vk.svg
+            a.footer__social-link(href="/")
+              include ../../../static/images/footer/social/twitter.svg
+            a.footer__social-link(href="/")
+              include ../../../static/images/footer/social/fb.svg
+    .footer__col
+      h4 Подпишись на нашу рассылку!
+      p Мы регулярно будем информировать Вас о новых проектах, ходе работ по долевому строительству, делиться полезными статьями и другими материалами.
+
+      form.footer__form(action="")
+        .footer__input-wr
+          input.buttom-request__input(type="text" placeholder="Имя / компания")
+        .footer__input-wr
+          input.buttom-request__input(type="email" placeholder="Email")
+        a.btn(type="submit") Подписаться
+
+        .footer__agency
+          span Разработка сайта:
+          a.footer__agency-link(href="/")
+            img(src="./static/images/footer/agency.png", alt="agency")
