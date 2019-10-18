@@ -1,0 +1,11 @@
+extends template/main
+
+block variables
+	- var pageClass = 'blog'
+	- var headerName = 'third-header'
+	- var title = 'Блог'
+
+block content
+	include ./modules/section-news/section-news.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug
