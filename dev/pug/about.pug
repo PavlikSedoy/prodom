@@ -1,0 +1,18 @@
+extends template/main
+
+block variables
+	- var title = 'О нас'
+	- var desc = 'Общество с ограниченной ответственностью “Продом”'
+	- var pageClass = 'about-page'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/about/header-bg.jpg)'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "О нас"
+	- var breadcrumbLink2 = "/about.html"
+
+block content
+	include ./modules/section-about-info/section-about-info.pug
+	include ./modules/section-two-col-check/section-two-col-check.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug

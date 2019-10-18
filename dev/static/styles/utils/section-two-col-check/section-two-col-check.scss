@@ -2,11 +2,21 @@
   background-color: $light-gray-bg;
   padding: 4.43rem 0 4rem;
 
+  &.about {
+    background-color: $white;
+  }
+
   &__items {
     margin-top: 2.86rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  &__desc {
+    margin-top: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 3.57rem;
   }
 
   // Item
@@ -34,7 +44,7 @@
 
     span {
       line-height: 1.3rem;
-      font-size: 0.86rem;
+      font-size: 1rem;
     }
   }
 

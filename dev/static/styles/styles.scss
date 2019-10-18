@@ -70,6 +70,10 @@ section {
 
 *, *:before, *:after { box-sizing: border-box; }
 
+.map {
+  height: 450px;
+}
+
 //Модули
 @import "modules/modules";
 
@@ -103,3 +107,5 @@ section {
 @import "utils/section-object-gallery/section-object-gallery.scss";
 @import "utils/section-project-info/section-project-info.scss";
 @import "utils/current-post/current-post.scss";
+@import "utils/section-about-info/section-about-info.scss";
+@import "utils/section-contacts/section-contacts.scss";

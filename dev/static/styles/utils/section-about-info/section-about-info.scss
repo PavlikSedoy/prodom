@@ -1,0 +1,19 @@
+.about-info {
+  padding-top: 6.07rem;
+  padding-bottom: 4.36rem;
+
+  &__row {
+    margin-top: 3.14rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row-item {
+    flex-basis: calc(50% - 40px);
+  }
+
+  p {
+    margin-top: 1.21rem;
+    line-height: 1.3rem;
+  }
+}

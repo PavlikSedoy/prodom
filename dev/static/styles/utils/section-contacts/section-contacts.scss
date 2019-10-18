@@ -1,0 +1,49 @@
+.contacts-full {
+  padding-top: 6rem;
+  padding-bottom: 8.36rem;
+  border-bottom: 5px solid $yellow;
+
+  &__row {
+    margin-top: 0.71rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-top: 2.71rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col {
+    flex-basis: calc(50% - 62px);
+  }
+
+  &__img-wr {
+    flex-basis: 57px;
+    align-self: flex-start;
+    height: 57px;
+    background-color: $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    flex-basis: 411px;
+
+    h4 {
+      font-size: 1.29rem;
+      font-weight: 500;
+    }
+
+    ul {
+      margin-top: 1.43rem;
+    }
+
+    li {
+      line-height: 1.7rem;
+    }
+  }
+}

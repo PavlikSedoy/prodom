@@ -1,0 +1,18 @@
+extends template/main
+
+block variables
+	- var title = 'Контакты'
+	- var desc = 'ООО “Продом”, г. Брест. Звоните - мы всегда готовы помочь!'
+	- var pageClass = 'contacts-page'
+	- var headerName = 'second-header'
+	- var headerImgPath = 'background-image: url(./static/images/contacts/header-bg.jpg)'
+	- var breadcrumb1 = "Главная"
+	- var breadcrumbLink1 = "/"
+	- var breadcrumb2 = "Контакты"
+	- var breadcrumbLink2 = "/contacts.html"
+
+block content
+	include ./modules/section-contacts/section-contacts.pug
+	include ./modules/section-map/section-map.pug
+	include ./modules/buttom-request-block/buttom-request-block.pug
+	include ./modules/footer/footer.pug
