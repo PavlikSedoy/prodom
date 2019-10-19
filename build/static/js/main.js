@@ -107,6 +107,17 @@ $('#bottomFormFile').change( function () {
     }
 });
 
+// On add file to popup form
+$('#popupFormFile').change( function () {
+    var fileName = $(this).val();
+
+    if (/^\s*$/.test(fileName)) {
+        $('#fileNamePopup').text('');
+    } else {
+        $("#fileNamePopup").text(fileName.replace("C:\\fakepath\\", ""))
+    }
+});
+
 // Show/hide examples gallery in metal page
 $('#examplesHeader').click( function() {
     $('#examplesToggleBox').slideToggle();
@@ -156,14 +167,46 @@ $('select').each(function(){
         $styledSelect.removeClass('active');
         $list.hide();
     });
+});
 
-    // Reset filters
-    $('#resetFilters').click( function(e) {
-        e.preventDefault();
+// Reset filters
+$('#resetFilters').click( function(e) {
+    e.preventDefault();
 
-        $('#buildingType').val('');
-        $('#buildingType').next('.select-styled').text('');
-        $('#workType').val('');
-        $('#workType').next('.select-styled').text('');
-    })
+    $('#buildingType').val('');
+    $('#buildingType').next('.select-styled').text('');
+    $('#workType').val('');
+    $('#workType').next('.select-styled').text('');
+});
+
+// Close popup when user click outsite popup
+$(document).click( function(e) {
+    if (!$(e.target).parents().addBack().is('.popup__wr')) {
+        $('.popup').fadeOut();
+    }
+});
+
+// Open popup
+$('.btn-popup').click( function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    var popupType = $(this).data('modal');
+
+    if ( popupType == 'request' ) {
+        $('#requestPopUp').fadeIn();
+    }
+    if ( popupType == 'consultation' ) {
+        $('#consultationPopup').fadeIn();
+    }
+    if ( popupType == 'subscribe' ) {
+        $('#subscribePopup').fadeIn();
+    }
+});
+
+// Close popup
+$('.popup__close').click( function(e) {
+    e.preventDefault();
+
+    $('.popup').fadeOut();
 });

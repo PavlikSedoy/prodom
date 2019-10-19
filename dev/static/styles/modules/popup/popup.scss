@@ -1,0 +1,116 @@
+.popup {
+  position: fixed;
+  background-color: rgba($third-header-bg, .6);
+  z-index: z('modal');
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  // PoupUp
+  &__wr {
+    width: 635px;
+    background-color: $light-gray-bg;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // Heading
+  h2 {
+    line-height: 2.8rem;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    margin-top: 0.78rem;
+  }
+
+  // Form
+  &__form {
+    margin-top: 2.64rem;
+  }
+
+  &__input-wr {
+    margin-top: 1.57rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__textarea-wr {
+    margin-top: 1.57rem;
+  }
+
+  &__file-wr {
+    margin-top: 1.21rem;
+
+    label {
+      cursor: pointer;
+      font-style: italic;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  &__submit-wr {
+    margin-top: 1.21rem;
+  }
+
+  &__privacy-poicy {
+    margin-top: 2.21rem;
+    line-height: 1.2rem;
+
+    a {
+      color: $default-text;
+      text-decoration: underline;
+    }
+  }
+
+  // Close
+  &__close {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s ease;
+
+    &:before, &:after {
+      @include pseudo;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 2px;
+      width: 200%;
+      background-color: rgba($default-text, .6);
+    }
+
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &:before, &:after {
+        background-color: $default-text;
+      }
+    }
+  }
+}

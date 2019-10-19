@@ -25,7 +25,7 @@
                   <li><a href="/eng">ENG</a></li>
                 </ul>
               </div>
-              <div class="nav-ctrls__item nav-ctrls__btn-wr"><a>Заказать <br> звонок</a></div>
+              <div class="nav-ctrls__item nav-ctrls__btn-wr"><a class="btn-popup" href="/" data-modal="request">Заказать <br> звонок</a></div>
             </div>
           </div>
           <div class="nav-bar__nav nav">
@@ -70,7 +70,7 @@
               <div class="container home-header__container">
                 <p class="home-header__before-title">Возводим до небес и на века!</p>
                 <h1>Строительство <br>и проектирование <br>зданий</h1>
-                <p class="home-header__desc">Промышленные и гражданские здания, <br>жилье, объекты медицинского и <br>социально-культурного назначения</p><a class="btn home-header__btn" href="/">Консультация</a>
+                <p class="home-header__desc">Промышленные и гражданские здания, <br>жилье, объекты медицинского и <br>социально-культурного назначения</p><a class="btn home-header__btn btn-popup" href="/" data-modal="request">Консультация</a>
               </div>
             </div>
             <div class="swiper-slide" style="background-image: url(./static/images/home-page/header-slider/slide-2.jpeg)">
@@ -78,7 +78,7 @@
               <div class="container home-header__container">
                 <p class="home-header__before-title">Возводим до небес и на века!</p>
                 <h1>Строительство <br>и проектирование <br>зданий2</h1>
-                <p class="home-header__desc">Промышленные и гражданские здания, <br>жилье, объекты медицинского и <br>социально-культурного назначения</p><a class="btn home-header__btn" href="/">Консультация</a>
+                <p class="home-header__desc">Промышленные и гражданские здания, <br>жилье, объекты медицинского и <br>социально-культурного назначения</p><a class="btn home-header__btn btn-popup" href="/" data-modal="request">Консультация</a>
               </div>
             </div>
             <div class="swiper-slide" style="background-image: url(./static/images/home-page/header-slider/slide-3.jpeg)">
@@ -86,7 +86,7 @@
               <div class="container home-header__container">
                 <p class="home-header__before-title">Возводим до небес и на века!</p>
                 <h1>Строительство <br>и проектирование <br>зданий3</h1>
-                <p class="home-header__desc">Промышленные и гражданские здания, <br>жилье, объекты медицинского и <br>социально-культурного назначения</p><a class="btn home-header__btn" href="/">Консультация</a>
+                <p class="home-header__desc">Промышленные и гражданские здания, <br>жилье, объекты медицинского и <br>социально-культурного назначения</p><a class="btn home-header__btn btn-popup" href="/" data-modal="request">Консультация</a>
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@
               <p>Позвоните нам или закажите звонок, <br>и мы обязательно перезвоним Вам и ответим на все вопросы.</p>
             </div>
           </div>
-          <div class="section-calculate__btn-wr"><a class="btn btn-white section-calculate__btn">РАССЧИТАТЬ</a></div>
+          <div class="section-calculate__btn-wr"><a class="btn btn-white section-calculate__btnbtn-popupz btn-popup" href="/" data-modal="request">РАССЧИТАТЬ</a></div>
         </div>
       </section>
       <section class="section-callback">
@@ -352,7 +352,7 @@
       </section>
       <footer class="footer">
         <div class="container footer__container">
-          <div class="footer__col"><span class="footer__website">PRODOMSTROY.BY</span><span class="footer__ooo">© 2010-2019, ООО "ПРОДОМ" <br>УНП 290960928</span><span class="footer__address">224025, Республика Беларусь, <br> г. Брест , ул. Комсомольская 23Б</span><span class="footer__work-tiem">Пн - Пт : 8:00 - 17:00</span><span class="footer__contact-title">Приемная руководителя:</span><a class="footer__phone" href="tel://+375162209228">+375 (162) 20-92-28</a><a class="footer__mail" href="mailto://info@prodomstroy.by">info@prodomstroy.by</a><a class="btn get-call">Заказать звонок</a></div>
+          <div class="footer__col"><span class="footer__website">PRODOMSTROY.BY</span><span class="footer__ooo">© 2010-2019, ООО "ПРОДОМ" <br>УНП 290960928</span><span class="footer__address">224025, Республика Беларусь, <br> г. Брест , ул. Комсомольская 23Б</span><span class="footer__work-tiem">Пн - Пт : 8:00 - 17:00</span><span class="footer__contact-title">Приемная руководителя:</span><a class="footer__phone" href="tel://+375162209228">+375 (162) 20-92-28</a><a class="footer__mail" href="mailto://info@prodomstroy.by">info@prodomstroy.by</a><a class="btn get-call btn-popup" href="/" data-modal="consultation">Заказать звонок</a></div>
           <div class="footer__col">
             <div class="footer__row">
               <div class="footer__col-in-row"><a class="footer__page-type" href="/services.html">Услуги</a><a class="footer__in-type-page" href="/">Строительство зданий <br>и сооружений</a><a class="footer__in-type-page" href="/">Проектирование домов</a><a class="footer__in-type-page" href="/">Долевое строительство</a></div>
@@ -383,6 +383,45 @@
           </div>
         </div>
       </footer>
+      <div class="popup" id="requestPopUp">
+        <div class="popup__wr">
+          <h2>Расчитаем стоимость проекта или окажем консультацию</h2>
+          <p class="popup__desc">Оставьте ваши контакты и мы свяжемся с вами</p>
+          <form class="popup__form" id="poupRequestForm" action="/">
+            <div class="popup__input-wr">
+              <input class="buttom-request__input" name="bottomFormName" placeholder="Имя / компанию" type="text">
+            </div>
+            <div class="popup__input-wr">
+              <input class="buttom-request__input" name="bottomFormPhone" placeholder="Номер телефона" type="text" inputMode="tel">
+            </div>
+            <div class="popup__textarea-wr">
+              <textarea class="buttom-request__textarea" id="bottomFormMessage" cols="30" rows="10" placeholder="Задачи, которые требуется решить "></textarea>
+            </div>
+            <div class="popup__file-wr">
+              <label for="popupFormFile">Прикрепить файл</label>
+              <input class="buttom-request__file" id="popupFormFile" name="popupFormFile" type="file"><span id="fileNamePopup"></span>
+            </div>
+            <div class="popup__submit-wr"><a class="btn buttom-request__submit" type="submit">Отправить</a></div>
+          </form>
+          <p class="popup__privacy-poicy">Нажимая “Отправить”, вы соглашаетесь с нашей <br> <a href="/">политикой конфиденциальности</a></p><a class="popup__close" id="closeRequstPopUp" href="close"></a>
+        </div>
+      </div>
+      <div class="popup" id="consultationPopup">
+        <div class="popup__wr">
+          <h2>Расчитаем стоимость проекта или окажем консультацию</h2>
+          <p class="popup__desc">Оставьте ваши контакты и мы свяжемся с вами</p>
+          <form class="popup__form" id="popupConsultationForm" action="/">
+            <div class="popup__input-wr">
+              <input class="buttom-request__input" id="consultationFormName" name="bottomFormName" placeholder="Имя / компанию" type="text">
+            </div>
+            <div class="popup__input-wr">
+              <input class="buttom-request__input" id="consultationFormPhone" name="bottomFormPhone" placeholder="Номер телефона" type="text" inputMode="tel">
+            </div>
+            <div class="popup__submit-wr"><a class="btn buttom-request__submit" type="submit">Отправить</a></div>
+          </form>
+          <p class="popup__privacy-poicy">Нажимая “Отправить”, вы соглашаетесь с нашей <br> <a href="/">политикой конфиденциальности</a></p><a class="popup__close" href="close"></a>
+        </div>
+      </div>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>
     <script src="static/js/libs.min.js"></script>

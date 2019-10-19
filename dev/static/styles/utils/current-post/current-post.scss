@@ -1,4 +1,8 @@
 .current-post {
+  a {
+    margin-right: 0;
+  }
+
   &__container {
     display: flex;
     padding-top: 6.07rem;
@@ -141,14 +145,13 @@
 
   &__share-item-wr {
     margin-top: 1.21rem;
-  }
-
-  a {
-    margin-right: 6px;
-
-    svg {
-      width: 36px;
-      height: 36px;
+    a {
+      margin-right: 6px;
+  
+      svg {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 }
