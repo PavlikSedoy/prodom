@@ -11,5 +11,68 @@
     &__logo img {
       max-width: 100px;
     }
-  } 
+  }
+  
+  .nav-ctrls__hamburger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .mobile-nav {
+    &__wr {
+      padding: 30px 20px;
+    }
+
+    &__phone {
+      font-size: 1.8rem;
+    }
+
+    &__mail {
+      font-size: 1.4rem;
+    }
+
+    &__lng-item {
+      font-size: 2rem;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+
+    &__lng-switcher {
+      margin-top: 2rem;
+    }
+
+    &__controls {
+      padding-bottom: 2rem;
+    }
+
+    &__nav {
+      li {
+        margin-top: 2rem;
+
+        a {
+          font-size: 1.8rem;
+        }
+
+        ul {
+          margin-left: 2rem;
+
+          li {
+            margin-top: 2rem;
+
+            a {
+              font-size: 1.5rem;
+              line-height: 2.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }

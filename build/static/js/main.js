@@ -215,6 +215,10 @@ $(document).click( function(e) {
     if (!$(e.target).parents().addBack().is('.popup__wr')) {
         $('.popup').fadeOut();
     }
+
+    if (!$(e.target).parents().addBack().is('.mobile-nav__wr')) {
+        $('#mobileNav').removeClass('active').fadeOut(1000);
+    }
 });
 
 // Open popup
@@ -240,4 +244,12 @@ $('.popup__close').click( function(e) {
     e.preventDefault();
 
     $('.popup').fadeOut();
+});
+
+// Hamburger
+$('#hamburger').click( function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $('#mobileNav').fadeIn().addClass('active');
 });

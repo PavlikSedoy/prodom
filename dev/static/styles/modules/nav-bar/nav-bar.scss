@@ -113,6 +113,24 @@
       background-color: $nav-text-color;
     }
   }
+
+  // Hamburger
+  &__hamburger {
+    width: 62px;
+    height: 42px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    span {
+      width: 100%;
+      height: 8.4px;
+      background-color: $white;
+      margin-top: 0 !important;
+    }
+  }
 }
 
 // Navigation
@@ -188,5 +206,121 @@
     &:hover {
       color: $nav-active-color;
     }
+  }
+}
+
+.mobile-nav {
+  // display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: z('nav-bar');
+  background-color: rgba($darken-layer-bg, .3);
+  // display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: .3s ease;
+  display: none;
+
+  &__wr {
+    max-width: 80%;
+    background-color: $darken-layer-bg;
+    padding: 48px 32px;
+    box-shadow: 0px 0px 33px -1px rgba(34, 34, 40, 0.7);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    transition: .3s ease .5s;
+    float: right;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3.64rem;
+    border-bottom: 3px solid rgba($white, .3);
+  }
+
+  &__phone {
+    font-size: 4.07rem;
+    font-weight: 900;
+    color: $white;
+    display: block;
+  }
+
+  &__mail {
+    font-size: 2.9rem;
+    font-weight: 500;
+    color: $white;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  &__lng-switcher {
+    margin-top: 3rem;
+  }
+
+  &__lng-item {
+    font-size: 3.64rem;
+    color: $white;
+    font-weight: 700;
+
+    &:first-child {
+      margin-right: 25px;
+    }
+
+    &:last-child {
+      margin-left: 25px;
+    }
+
+    &.active {
+      color: $yellow;
+    }
+  }
+
+  &__nav {
+    li {
+      margin-top: 5.29rem;
+
+      a {
+        font-size: 2.79rem;
+        color: $white;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 3.5rem;
+      }
+
+      &.active {
+        a {
+          color: $yellow;
+        }
+      }
+
+      ul {
+        margin-left: 5rem;
+
+        li {
+          margin-top: 4.64rem;
+  
+          a {
+            font-size: 2.14rem;
+            text-transform: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  &.active {
+    .mobile-nav__wr {
+      transform: translateX(0);
+    }
+
+    opacity: 1;
   }
 }
