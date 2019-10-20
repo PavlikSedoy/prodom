@@ -1,0 +1,35 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .section-numbers {
+    background-position: 30% 50%;
+
+    &__desc {
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    &__count span {
+      font-size: 3rem;
+    }
+
+    &__items {
+      flex-basis: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .section-numbers {
+    background-position: 50% 50%;
+
+    &__items {
+      flex-basis: 100%;
+    }
+
+    &__count span {
+      font-size: 2rem;
+    }
+  }
+}

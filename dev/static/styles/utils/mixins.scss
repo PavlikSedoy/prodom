@@ -15,6 +15,9 @@
     @media screen and (max-width: map-get($bootstrap-breackpoints, $windows-size)) {
       .container {
         max-width: map-get($bootstrap-max-width, $windows-size);
+        @if $windows-size == 'xs' {
+          padding: 0 15px;
+        }
       }
     }
   }

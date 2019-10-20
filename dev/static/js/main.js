@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     // Clients slider
-    if ( $('.section-clients__swiper-slide').length > 6 ) {
+    if ( $('.section-clients__swiper-slide').length > 6 || $(window).width() < 768 ) {
         $('.section-clients__swiper-slide').each( function () {
             $(this).css('flex-basis', 'auto');
         });
@@ -29,6 +29,14 @@ $(document).ready(function () {
             autoplay: {
                 delay: 2000,
             },
+            breakpoints: {
+                320: {
+                  slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 6,
+                }
+            }
         });
     }
 
@@ -36,25 +44,48 @@ $(document).ready(function () {
     var mySwiperSertificates = new Swiper('.sertificates-slider', {
         // Optional parameters
         loop: false,
-        slidesPerView: 3,
         spaceBetween: 12,
+        breakpoints: {
+            // when window width is >= 640px
+            320: {
+              slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            }
+        }
     });
 
     // Reviews slider
     var mySwiperReviews = new Swiper('.reviews-slider', {
         // Optional parameters
         loop: false,
-        slidesPerView: 3,
         spaceBetween: 12,
+        breakpoints: {
+            320: {
+              slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            }
+        }
     });
 
     // Reviews slider in review section
     var mySwiperReviews = new Swiper('.reviews-slider-in-section', {
         // Optional parameters
         loop: false,
-        slidesPerView: 4,
-        spaceBetween: 83,
-        centerInsufficientSlides: true
+        centerInsufficientSlides: true,
+        breakpoints: {
+            320: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 80,
+            }
+        }
     });
 
     // Sertificates lightbox

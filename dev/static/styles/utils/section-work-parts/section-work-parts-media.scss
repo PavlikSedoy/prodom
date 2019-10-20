@@ -1,0 +1,46 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'lg')) {
+  .work-parts {
+    &__row {
+      padding-right: 20px;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:last-child, &:nth-child(3) {
+        margin-top: 70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .work-parts {
+    &__item {
+      align-items: flex-start;
+      flex-basis: 100%;
+
+      // &_square {
+        // width: 100px;
+        // height: 100px;
+
+        // img {
+        //   height: 80px;
+        // }
+      // }
+
+      &:nth-child(2n) {
+        align-items: flex-end;
+        text-align: right;
+      }
+    }
+
+    &__row {
+      padding-right: 0;
+    }
+  }
+}

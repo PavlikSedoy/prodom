@@ -1,0 +1,23 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .current-post {
+    &__container {
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+    }
+  
+    &__main {
+      flex-basis: 100%;
+      padding-right: 0;
+    }
+
+    &__gallery a {
+      flex-basis: calc((100% - 10px) / 2);
+      margin-top: 10px;
+    }
+
+    &__share-item-wr a svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}

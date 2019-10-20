@@ -1,0 +1,12 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .about-info {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__row-item {
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
+  }
+}

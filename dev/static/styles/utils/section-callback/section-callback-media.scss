@@ -1,0 +1,69 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'lg')) {
+  .section-callback {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .review-slide, .sertificate-slide {
+      height: 175px;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .section-callback {
+    &__side {
+      flex-basis: calc((100% - 50px) / 2);
+      overflow: hidden;
+
+      & > div {
+        margin-top: 2rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.9rem;
+    }
+
+    .review-slide, .sertificate-slide {
+      height: 235px;
+    }
+  }
+
+  .services-page-first {
+    .review-slide {
+      height: 235px;
+    }
+  }
+  
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .section-callback {
+    padding: 5rem 0;
+
+    &__side {
+      flex-basis: 100%;
+
+      & > div {
+        margin-top: 1rem;
+      }
+
+      &:last-child {
+        margin-top: 2rem;
+      }
+    }
+
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    .review-slide, .sertificate-slide {
+      height: 200px;
+    }
+  }
+
+  .services-page-first .review-slide, .construction-design .review-slide {
+    height: 205px;
+  }
+}

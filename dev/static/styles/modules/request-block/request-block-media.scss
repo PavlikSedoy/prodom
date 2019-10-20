@@ -1,0 +1,10 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .header-request-block {
+    max-width: 100%;
+
+    a {
+      margin: 1rem 0;
+      height: 40px;
+    }
+  }
+}

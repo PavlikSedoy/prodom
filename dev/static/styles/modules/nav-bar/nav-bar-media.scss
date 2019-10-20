@@ -1,0 +1,15 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .nav-bar {
+    &__controls {
+      display: none;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__logo img {
+      max-width: 100px;
+    }
+  } 
+}

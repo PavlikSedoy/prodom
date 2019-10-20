@@ -1,0 +1,25 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .product {
+    flex-basis: 100%;
+    height: 110px;
+
+    &.double {
+      flex-basis: 100%;
+    }
+  }
+
+  .section-assortment {
+    &__request-row {
+      flex-wrap: wrap;
+
+      a {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    &__request-text {
+      flex-basis: 100%;
+    }
+  }
+}

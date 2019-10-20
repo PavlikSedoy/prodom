@@ -1,0 +1,5 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .object-gallery__gallery a {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}

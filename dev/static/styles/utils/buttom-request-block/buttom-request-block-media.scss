@@ -1,0 +1,37 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .buttom-request {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__form {
+      flex-basis: 100%;
+    }
+
+    &__contacts {
+      flex-basis: 60%;
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .buttom-request {
+    &__input-wr {
+      flex-basis: 100%;
+      margin-top: 2rem;
+
+      &:first-child {
+        margin-top: 0rem;
+      }
+    }
+
+    &__submit-wr, &__submit {
+      width: 100%;
+    }
+
+    &__contacts {
+      flex-basis: 100%;
+    }
+  }
+}

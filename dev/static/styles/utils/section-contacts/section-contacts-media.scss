@@ -1,0 +1,52 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'lg')) {
+  .contacts-full {
+    &__content {
+      flex-basis: 340px;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .contacts-full {
+    &__col {
+      flex-basis: calc(50% - 15px);
+    }
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__content {
+      flex-basis: auto;
+    }
+
+    &__img-wr {
+      width: 40px;
+      height: 40px;
+      flex-basis: 40px;
+      margin-bottom: 15px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .contacts-full {
+    &__col {
+      flex-basis: 100%;
+    }
+
+    &__img-wr {
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      text-align: center;
+    }
+  }
+}

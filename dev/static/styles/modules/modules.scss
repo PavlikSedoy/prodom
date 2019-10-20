@@ -8,3 +8,10 @@
 @import "./services-item/services-item.scss";
 @import "./request-block/request-block.scss";
 @import "./popup/popup.scss";
+
+// Media
+@import "../utils/header/header-media.scss";
+@import "./nav-bar/nav-bar-media.scss";
+@import "footer/footer-media";
+@import "./request-block/request-block-media.scss";
+@import "./popup/popup-media.scss";

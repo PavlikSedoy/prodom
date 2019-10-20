@@ -1,0 +1,33 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .metal-assortment {
+    &__img-wr {
+      width: 143px;
+      height: 143px;
+    }
+
+    &__item {
+      flex-basis: 163px;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .metal-assortment {
+    margin-top: 20px;
+
+    &__item {
+      padding-right: 0;
+      flex-basis: calc(50% - 10px);
+    }
+
+    &__assortment-list {
+      justify-content: space-between;
+    }
+
+    &__img-wr {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}

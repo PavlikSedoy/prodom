@@ -1,0 +1,35 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .examples {
+    &__content {
+      padding: 20px;
+    }
+
+    &__item {
+      height: 120px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__header {
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      &:before, &:after {
+        width: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .examples {
+    &__item {
+      height: 80px;
+      flex-basis: calc((100% - 10px) / 2);
+    }
+  }
+}

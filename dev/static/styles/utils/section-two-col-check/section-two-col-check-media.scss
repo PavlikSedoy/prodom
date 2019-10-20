@@ -1,0 +1,15 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .two-col-check {
+    &__item {
+      flex-basis: calc((100% - 50px) / 2);
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .two-col-check {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+}

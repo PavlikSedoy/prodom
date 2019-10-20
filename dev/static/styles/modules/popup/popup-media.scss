@@ -1,0 +1,27 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .popup {
+    &__wr {
+      width: 100vw;
+      height: 100vh;
+      padding: 30px 15px 15px;
+    }
+
+    &__close {
+      right: 15px;
+      top: 15px;
+    }
+
+    h2 {
+      line-height: 2.5rem;
+      font-size: 2rem;
+    }
+
+    &__desc {
+      margin-top: 0.5rem;
+    }
+
+    &__input-wr, &__textarea-wr {
+      margin-top: 1rem;
+    }
+  }
+}

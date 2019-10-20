@@ -1,0 +1,18 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .cex {
+    &__contacts {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      span {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .cex__contacts {
+    padding: 10px;
+  }
+}

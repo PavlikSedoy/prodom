@@ -1,0 +1,22 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .section-calculate {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__content {
+      flex-basis: 100%;
+    }
+
+    &__desc p {
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+
+    &__btn-wr {
+      margin-top: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'lg')) {
+  .what-made {
+    &__item {
+      &:first-child img {
+        max-width: 200px;
+      }
+
+      &:nth-child(2) img {
+        max-width: 300px;
+      }
+
+      &:last-child img {
+        max-width: 320px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .what-made {
+    &__item {
+      &:first-child img {
+        max-width: 160px;
+      }
+
+      &:nth-child(2) img {
+        max-width: 250px;
+      }
+
+      &:last-child img {
+        max-width: 270px;
+      }
+    }
+
+    h5 {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .what-made {
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__item {
+      margin-top: 3rem;
+    }
+  }
+}

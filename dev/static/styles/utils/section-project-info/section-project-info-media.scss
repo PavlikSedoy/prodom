@@ -1,0 +1,25 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'lg')) {
+  .project-info {
+    &__about {
+      flex-basis: 50%;
+    }
+
+    &__main-info {
+      flex-basis: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .project-info {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__main-info {
+      padding-left: 0;
+      border: none;
+      margin-top: 20px;
+    }
+  }
+}

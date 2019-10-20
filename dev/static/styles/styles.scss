@@ -109,3 +109,55 @@ section {
 @import "utils/current-post/current-post.scss";
 @import "utils/section-about-info/section-about-info.scss";
 @import "utils/section-contacts/section-contacts.scss";
+
+// Media
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  html {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  html {
+    font-size: 11px;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+@import "utils/section-callback/section-callback-media.scss";
+@import "utils/section-portfolio/section-portfolio-media.scss";
+@import "utils/section-about/section-about-media.scss";
+@import "utils/section-numbers/section-numbers-media.scss";
+@import "utils/section-calculate/section-calculate-media.scss";
+@import "utils/section-news/section-news-media.scss";
+@import "utils/buttom-request-block/buttom-request-block-media.scss";
+@import "utils/section-two-col-check/section-two-col-check-media.scss";
+@import "utils/section-what-made/section-what-made-media.scss";
+@import "utils/section-work-parts/section-work-parts-media.scss";
+@import "utils/building-service-section/building-service-section-media.scss";
+@import "utils/section-advantages/section-advantages-media.scss";
+@import "utils/section-new-sphere/section-new-sphere-media.scss";
+@import "utils/section-project-work/section-project-work-media.scss";
+@import "utils/section-based-advantages/section-based-advantages-media.scss";
+@import "utils/section-assortment/section-assortment-media.scss";
+@import "utils/section-partners/section-partners-media.scss";
+@import "utils/metal-page/metal-page-media.scss";
+@import "utils/section-metal-assortment/section-metal-assortment-media.scss";
+@import "utils/section-examples/section-examples-media.scss";
+@import "utils/section-cex/section-cex-media.scss";
+@import "utils/section-why-we/section-why-we-media.scss";
+@import "utils/section-projects/section-projects-media.scss";
+@import "utils/section-project-info/section-project-info-media.scss";
+@import "utils/section-object-gallery/section-object-gallery-media.scss";
+@import "utils/section-about-info/section-about-info-media.scss";
+@import "utils/section-contacts/section-contacts-media.scss";
+@import "utils/current-post/current-post-media.scss";

@@ -1,0 +1,7 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .why-we {
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+}

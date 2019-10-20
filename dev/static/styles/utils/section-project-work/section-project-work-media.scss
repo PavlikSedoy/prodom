@@ -1,0 +1,27 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'md')) {
+  .project-work {
+    &__item {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .project-work {
+    &__item {
+      flex-basis: 50%;
+
+      &_img-wr {
+        width: 100px;
+        height: 100px;
+      }
+
+      figcaption {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

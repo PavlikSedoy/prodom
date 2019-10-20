@@ -1,0 +1,55 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'lg')) {
+  .footer {
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__col:last-child {
+      flex-basis: 100%;
+      margin-top: 3rem;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__input-wr {
+      input {
+        text-align-last: left;
+      }
+    }
+
+    &__agency {
+      float: right;
+
+      a {
+        width: auto;
+      }
+    }
+  }  
+}
+
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__col:nth-child(2) {
+      margin-top: 2rem;
+    }
+
+    &__row {
+      margin-top: 1rem;
+    }
+
+    a {
+      margin-top: 0.6rem;
+    }
+
+    &__agency {
+      float: left;
+    }
+  }
+}

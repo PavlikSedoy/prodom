@@ -1,0 +1,35 @@
+@media screen and (max-width: map-get($bootstrap-breackpoints, 'sm')) {
+  .new-sphere {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      flex-basis: 100%;
+      height: 250px;
+
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .target {
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    &__content {
+      flex-basis: 100%;
+
+      p {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+
+    .btn {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
